@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+    <h1><%= book.title %></h1>
+    <form action="/api/books/<%= book._id %>?_method=DELETE" method="POST">
+      <button>Delete</button>
+    </form>
+    <h3>Add comment</h3>
+    <form class='flex' action="/api/books/<%= book._id %>" method="POST">
+      <input class='flex-4' type="text" name="name" placeholder="Comment" />
+      <input class='flex-1' type="submit" value="Add Comment" />
+    </form>
+    <h3>Comments</h3>
+    <% book.comments.forEach(each => { %>
+      <div class='comment'>
+        <p><%= each.name %></p>
+        <form action="/api/comment/<%= each._id %>" method="post">
+          <button>Delete</button>
+        </form>
+      </div>
+    <% }) %>
+  </body>
+</html>

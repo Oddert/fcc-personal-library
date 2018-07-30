@@ -1,0 +1,60 @@
+<% include ./partials/header %>
+<h1>Personal Library</h1>
+<h3>Front End</h3>
+<a href="/books">View all books</a>
+<a href="/books/new">Create a new book</a>
+<hr />
+<h3>API</h3>
+    <table>
+      <thead>
+        <td>Route</td>
+        <td>Method</td>
+        <td>Description</td>
+        <td>Include</td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>/api/books</td>
+          <td>GET</td>
+          <td>Returns an array of all books</td>
+          <td>Nothing</td>
+        </tr>
+        <tr>
+          <td>/api/books/{id}</td>
+          <td>GET</td>
+          <td>Returns a specific book</td>
+          <td>Nothing</td>
+        </tr>
+        <tr>
+          <td>/api/books</td>
+          <td>POST</td>
+          <td>Create a new book</td>
+          <td>Body with title parameter set to a string</td>
+        </tr>
+        <tr>
+          <td>/api/books/{book id}</td>
+          <td>POST</td>
+          <td>Create a new comment</td>
+          <td>Body with title parameter set to a string</td>
+        </tr>
+        <tr>
+          <td>/api/books</td>
+          <td>DELETE</td>
+          <td>Delete all books</td>
+          <td>Nothing</td>
+        </tr>
+        <tr>
+          <td>/api/books/{id}</td>
+          <td>POST</td>
+          <td>Delete a book</td>
+          <td>Nothing</td>
+        </tr>
+        <tr>
+          <td>/api/comment/{id}</td>
+          <td>POST</td>
+          <td>Delete a comment</td>
+          <td>Nothing</td>
+        </tr>
+      </tbody>
+    </table>
+<% include ./partials/footer %>

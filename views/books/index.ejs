@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+    <h1>View all books</h1>
+    <a href="/books/new">Create new book</a>
+    <form action="/api/books?_method=DELETE" method="POST">
+      <button>Delete all books</button>
+    </form>
+    <% books.forEach(each => { %>
+      <p class='inline'><a href='/books/<%= each._id %>'><%= each.title %> (<%= each.comments.length %> Comment(s))</a></p>
+      <form class='inline' action="/api/books/<%= each._id %>?_method=DELETE" method="POST">
+        <button>Delete</button>
+      </form>
+    <% }) %>
+  </body>
+</html>
