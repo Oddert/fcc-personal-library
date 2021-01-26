@@ -192,7 +192,8 @@ app.delete('/api/comment/:id', (req, res) => {
 })
 //========== / API Routes ==========
 
+const PORT = process.env.PORT || 3000
 var server = app.listen(
-  process.env.PORT || 3000,
-  () => console.log( `${new Date().toLocaleTimeString()}: Server initialised on port ${process.env.PORT}`)
+  PORT,
+  () => console.log( `${new Date().toLocaleTimeString()}: Server initialised on port ${PORT}`)
 );
