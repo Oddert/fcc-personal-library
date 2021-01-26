@@ -7,7 +7,7 @@ CRUD application built for one of the FreeCodeCamp Backend challanges.
 Node / express app built with MongoDB / Mongoose for data persistance.
 
 ## Live Demo
-[https://oddert-fcc-backend-message-board.glitch.me/](https://oddert-fcc-backend-message-board.glitch.me/)
+[https://oddert-fcc-personal-library.glitch.me/](https://oddert-fcc-personal-library.glitch.me/)
 
 ## Installation
 ```
