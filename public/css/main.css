@@ -32,3 +32,7 @@ td {
 .comment > p, .comment form {
   display: inline-block;
 }
+
+thead td {
+  font-weight: bold;
+}
