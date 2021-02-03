@@ -1,4 +1,4 @@
-<% include ../partials/header %>
+<%- include('partials/header') -%>
     <h1><%= book.title %></h1>
     <form action="/api/books/<%= book._id %>?_method=DELETE" method="POST">
       <button>Delete</button>
